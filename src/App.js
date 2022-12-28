@@ -10,17 +10,18 @@ import {
 function App() {
   return (
     <>
+    <div className="container">
  <Router>
     <Navbar/>
       <Routes>
         <Route   path='/about'  element ={<About/>} />
-        
-       
+
         <Route    path='/' element ={<Home/>} />
         
       </Routes>
 
     </Router>
+    </div>
     </>
    
   );
