@@ -21,10 +21,10 @@ const Login = (props) => {
             // Save the auth token and redirect
             localStorage.setItem('token', json.authtoken);
             history.push("/");
-            props.showAlert("Acccount created sucessfully", "sucess")
+            
         }
         else {
-            props.showAlert("InvalidPasword", "danger")
+          alert("invalid credentials")
         }
 
     }
@@ -45,7 +45,7 @@ const Login = (props) => {
                     <label htmlFor="password" className="form-label">Password</label>
                     <input type="password" className="form-control" value={credentials.password} onChange={onChange} name="password" id="password" />
                 </div>
-
+             
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
